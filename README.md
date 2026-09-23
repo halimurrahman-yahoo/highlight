@@ -46,8 +46,7 @@ $$
 Namun nilai tersebut **belum boleh langsung disebut turbulent variance**, karena spectral width juga dipengaruhi beam broadening dan shear broadening:
 
 $$
-\sigma_{\rm obs}^{2}
-=
+\sigma_{\rm obs}^{2}=
 \sigma_{\rm turb,radar}^{2}
 +
 \sigma_{BB+SB}^{2}.
@@ -57,10 +56,8 @@ Untuk vertical beam, shear broadening akibat horizontal wind shear hilang secara
 
 $$
 \boxed{
-\sigma_{\rm turb,radar}^{2}
-=
-\left(\frac{W_V}{2}\right)^2
--
+\sigma_{\rm turb,radar}^{2}=
+\left(\frac{W_V}{2}\right)^2-
 \sigma_{BB}^{2}
 }
 $$
