@@ -297,8 +297,7 @@ $$
 kemudian pada fase tertentu wave dapat memperkuat background shear:
 
 $$
-S_{\rm total}
-=
+S_{\rm total}=
 S_{\rm background}
 +
 S_{\rm wave}.
