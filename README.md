@@ -202,7 +202,7 @@ Kalau semua parameter digabungkan, gambarnya menjadi seperti berikut.
 
 | Parameter                               | Kondisi sekitar event 08:15 JST, 14–16 km                  | Interpretasi                                               |
 | --------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
-| Corrected \(\sigma^2_{\rm turb,radar}\) | peak vertical \(\sim7.73~{\rm m^2\,s^{-2}}\) pada 15.45 km | strong radial velocity fluctuations                        |
+| Corrected (\sigma^2_{\rm turb,radar}\) | peak vertical (\sim7.73~{\rm m^2\,s^{-2}}\) pada 15.45 km | strong radial velocity fluctuations                        |
 | Spectral width                          | enhanced/broad                                             | consistent with enhanced velocity variance                 |
 | Echo intensity                          | measurable, moderate upper-level echo                      | spectral estimate supported by detectable atmospheric echo |
 | Zonal wind                              | strong positive/eastward flow                              | event near strong upper-level flow                         |
