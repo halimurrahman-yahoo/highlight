@@ -39,8 +39,7 @@ $$
 maka
 
 $$
-\sigma_{\rm obs}^{2}
-=
+\sigma_{\rm obs}^{2}=
 \left(\frac{W}{2}\right)^2.
 $$
 
