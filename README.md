@@ -11,7 +11,7 @@
 
 <img width="430" height="360" alt="Screenshot_2026-09-24_05-49-58" src="https://github.com/user-attachments/assets/6bec5e18-b2dc-4d3f-a4a1-67e173146894" />
 
-Location MU Radar, Shigaraki-Japan
+Middle Upper (MU) Radar,located at the Shigaraki MU Observatory (34.85°N, 136.10°E) in Japan
 
 Data MU Radar terdiri dari lima beam: vertical, north, east, south, west; empat beam miring berada pada zenith angle 10°. Produk standar mempunyai resolusi waktu 10 menit, resolusi vertikal 150 m, dan mencakup kira-kira 2.025–19.875 km. Nilai `999` adalah missing data. ([RISH][1]) Pada gambar Anda indexing-nya dimulai dari nol, sehingga `Beam 0 = official Beam 1 = vertical`.
 
