@@ -166,7 +166,7 @@ $$
 
 Ini menunjukkan bahwa pada angin kuat sekalipun BB dapat signifikan, tetapi jauh lebih kecil daripada peak turbulent variance yang terlihat pada gambar Anda.
 
-Untuk beam miring, ada satu hal penting: \$(\partial U/\partial z\)$ pada persamaan bukan sembarang magnitude total wind shear, tetapi **shear dari komponen horizontal wind pada vertical plane beam tersebut**. Jadi secara praktis north/south terutama terkait \$(dv/dz\)$, sedangkan east/west terkait \$(du/dz\)$; tanda shear juga penting karena salah satu cross-term dapat positif atau negatif. Materi kuliah Anda secara khusus menekankan hal ini. 
+Untuk beam miring, ada satu hal penting: \$(\partial U/\partial z\)$ pada persamaan bukan sembarang magnitude total wind shear, tetapi **shear dari komponen horizontal wind pada vertical plane beam tersebut**. Jadi secara praktis north/south terutama terkait \$(dv/dz\)$, sedangkan east/west terkait \$(du/dz\)$; tanda shear juga penting karena salah satu cross-term dapat positif atau negatif. Prof. Hubert menekankan hal ini. 
 
 ---
 
