@@ -15,6 +15,11 @@ Middle Upper (MU) Radar,located at the Shigaraki MU Observatory (34.85°N, 136.1
 
 Data MU Radar terdiri dari lima beam: vertical, north, east, south, west; empat beam miring berada pada zenith angle 10°. Produk standar mempunyai resolusi waktu 10 menit, resolusi vertikal 150 m, dan mencakup kira-kira 2.025–19.875 km. Nilai `999` adalah missing data. ([RISH][1]) Pada gambar Anda indexing-nya dimulai dari nol, sehingga `Beam 0 = official Beam 1 = vertical`.
 
+
+<img width="1206" height="1280" alt="image" src="https://github.com/user-attachments/assets/1cfb5b9b-cc17-4a24-a74b-f9a2c816ebc4" />
+
+
+
 ## 1. Menghitung $\(2\sigma_{BB+SB}\)$
 
 <img width="388" height="303" alt="Screenshot_2026-09-24_07-35-50" src="https://github.com/user-attachments/assets/61269372-337f-4c64-a244-db12e3a0706a" />
@@ -250,7 +255,7 @@ sigma2_turb_plot = np.where(
 
 tetapi untuk analisis statistik jangan langsung membuang semua nilai negatif tanpa mempertimbangkan error measurement; materi kuliah juga mengingatkan bahwa nilai negatif dapat muncul karena uncertainty correction. 
 
-Ada satu detail yang harus Anda tulis di laporan: halaman RISH menyebut `wdt1...wdt5` sebagai **half-power full width**, sedangkan soal Anda secara eksplisit mendefinisikannya sebagai \$(2\sqrt{\sigma^2}\)$. ([RISH][1]) Untuk assignment ini mengikuti definisi yang diberikan soal, yaitu memakai \$(W/2\)$. Tidak mengubah  menjadi Gaussian FWHM dengan \$(2\sqrt{2\ln2}\)$. slide 39 meminta konversi itu?
+di halaman web RISH menyebut `wdt1...wdt5` sebagai **half-power full width**, sedangkan di soal secara eksplisit mendefinisikannya sebagai \$(2\sqrt{\sigma^2}\)$. ([RISH][1]) Untuk assignment ini mengikuti definisi yang diberikan soal, yaitu memakai \$(W/2\)$. Tidak mengubah  menjadi Gaussian FWHM dengan \$(2\sqrt{2\ln2}\)$. slide 39 konversi?
 
 ### Hasil dari gambar
 
@@ -304,7 +309,7 @@ $$
 
 Jadi angka **7.73 m² s⁻²** pada gambar bukan spectral width; itu sudah merupakan **turbulence-induced Doppler variance**.
 
-Peak yang terlihat pada gambar Anda adalah:
+Peak yang terlihat pada gambar adalah:
 
 | Beam pada plot | Direction | Peak \(\sigma_{\rm turb}^2\) | UTC          |       Height |
 | -------------- | --------- | ---------------------------: | ------------ | -----------: |
@@ -320,7 +325,7 @@ Peak yang terlihat pada gambar Anda adalah:
 
 Menurut saya event paling kuat untuk dibahas **bukan sekadar pixel dengan nilai terbesar dari kelima beam**, tetapi struktur yang mempunyai coherence dalam waktu–ketinggian dan muncul pada lebih dari satu beam.
 
-Pada gambar Anda terlihat enhanced turbulent variance yang cukup jelas pada sekitar
+Pada gambar terlihat enhanced turbulent variance yang cukup jelas pada sekitar
 
 $$
 13-15.5~{\rm km}
@@ -374,7 +379,7 @@ White area yang besar sekitar 03–04 UTC juga jangan ditafsirkan sebagai “zer
 
 ### Kesimpulan yang bisa dipakai untuk menjawab ketiga soal
 
-Secara ringkas, hasil Anda mendukung jawaban bahwa observed spectral width pertama-tama diubah menjadi variance melalui
+Secara ringkas, gambar mendukung bahwa observed spectral width pertama-tama diubah menjadi variance melalui
 
 $$
 \sigma_{\rm obs}^{2}=(W/2)^2,
@@ -383,16 +388,13 @@ $$
 kemudian beam- dan shear-broadening dihitung dan dikurangkan. Untuk vertical beam, \(SB=0\), sehingga
 
 $$
-\boxed{
-\sigma_{\rm turb,radar}^{2}
-=
-\left(\frac{W_{\rm vertical}}{2}\right)^2
--
+\boxed{\sigma_{\rm turb,radar}^{2}=
+\left(\frac{W_{\rm vertical}}{2}\right)^2-
 \frac{\theta^2}{4\ln2}(u^2+v^2)
 }
 $$
 
-dengan \(\theta=1.8^\circ\). Hasil plot menunjukkan event paling defensible sekitar **23:15 UTC, 15.45 km**, dengan
+dengan \$(\theta=1.8^\circ\)$. Hasil plot menunjukkan bahwa event sekitar **23:15 UTC, 15.45 km**, dengan
 
 $$
 \boxed{\sigma_{\rm turb,radar}^{2}=7.73~{\rm m^2\,s^{-2}}},
@@ -408,16 +410,16 @@ $$
 \boxed{2\sigma_{\rm turb}\approx5.56~{\rm m\,s^{-1}}}.
 $$
 
-Yang perlu saya cek berikutnya adalah **script yang menghasilkan gambar ini**, terutama cara Anda menghitung \(BB+SB\) untuk North/East/South/West. Cross-term Eq. 28 sensitif terhadap **arah dan tanda \(du/dz\) atau \(dv/dz\)**. Kalau Anda kirim script tersebut, saya bisa cek apakah perhitungan lima beam pada gambar ini sudah tepat atau masih ada hal yang perlu diperbaiki.
+Cek  **script yang menghasilkan gambar **, bgmn menghitung \$(BB+SB\)$ untuk North/East/South/West. Cross-term Eq. 28 sensitif terhadap **arah dan tanda \$(du/dz\)$ atau \$(dv/dz\)$**. !!!! 
 
 
-tiga parameter —**spectral width, echo intensity, serta zonal–meridional–vertical wind**—interpretasi event menjadi jauh lebih kuat daripada hanya melihat \(\sigma^2_{\mathrm{turb,radar}}\).
+Tambahahan analisis tiga parameter —**spectral width, echo intensity, serta zonal–meridional–vertical wind**— sbg interpretasi event unutuk memperkuat \$(\sigma^2_{\mathrm{turb,radar}}\)$.
 
 ## 1. Gambaran umum 13 Januari 2020
 
 Ketiga gambar menunjukkan struktur atmosfer yang cukup konsisten. Spectral width relatif besar terdapat pada lapisan sekitar **8–13 km** hampir sepanjang hari, dengan beberapa penguatan sampai sekitar **14–16 km** pada pagi hari. Echo intensity paling kuat berada di troposfer bawah, kira-kira di bawah 8–10 km, sedangkan pada 14–16 km sinyalnya lebih lemah tetapi masih cukup koheren untuk dianalisis. Wind field memperlihatkan **arus zonal yang sangat kuat**, dengan maksimum di sekitar 9–12 km dan kecepatan tetap besar sampai sekitar 15 km.
 
-Event yang paling menarik tetap event yang sebelumnya kita identifikasi dari corrected turbulent variance:
+Event yang paling menarik tetap event yang sebelumnya  mengidentifikasi dari corrected turbulent variance:
 
 $$
 \boxed{t \approx 08{:}15\ {\rm JST},\qquad z\approx15.45~{\rm km}}
@@ -435,7 +437,7 @@ $$
 \boxed{\sigma_{\rm turb,radar}^{2}\approx7.73~{\rm m^2\,s^{-2}}}.
 $$
 
-Pada South beam, penguatan serupa muncul sekitar 10 menit kemudian pada \(\sim14.4\) km. Jadi event tersebut bukan hanya satu pixel anomalous pada vertical beam.
+Pada South beam, penguatan serupa muncul sekitar 10 menit kemudian pada \$(\sim14.4\)$ km. Jadi event tersebut bukan hanya satu pixel anomalous pada vertical beam.
 
 ## 2. Spectral width: indikasi awal peningkatan velocity variance
 
@@ -454,7 +456,7 @@ $$
 \left(\frac{W}{2}\right)^2.
 $$
 
-Namun nilai tersebut **belum boleh langsung disebut turbulent variance**, karena spectral width juga dipengaruhi beam broadening dan shear broadening:
+Namun nilai tersebut **tidak langsung disebut turbulent variance**, karena spectral width juga dipengaruhi beam broadening dan shear broadening:
 
 $$
 \sigma_{\rm obs}^{2}=
@@ -473,7 +475,7 @@ $$
 }
 $$
 
-Materi kuliah memang menjelaskan bahwa vertical beam paling menguntungkan karena SB hilang, sedangkan finite beamwidth masih menghasilkan BB akibat horizontal wind. 
+Prof. Hubert menjelaskan bahwa vertical beam paling menguntungkan karena SB hilang, sedangkan finite beamwidth masih menghasilkan BB akibat horizontal wind. 
 
 Hal ini penting karena gambar wind menunjukkan horizontal wind yang sangat kuat. Dengan demikian, sebagian width yang besar—terutama pada oblique beams—dapat berasal dari **BB+SB**, bukan semuanya turbulence.
 
@@ -517,7 +519,7 @@ juga secara langsung masuk ke perhitungan shear broadening. Karena itu raw spect
 
 ## 4. Meridional wind memberikan tambahan shear
 
-Meridional wind juga memperlihatkan perubahan vertikal yang cukup besar. Di sekitar event upper-troposphere/lower-stratosphere tersebut, \(v\) tampak positif dan cukup kuat, secara kasar sekitar orde
+Meridional wind juga memperlihatkan perubahan vertikal yang cukup besar. Di sekitar event upper-troposphere/lower-stratosphere tersebut, \$(v\)$ tampak positif dan cukup kuat, secara kasar sekitar orde
 
 $$
 10-20~{\rm m\,s^{-1}},
@@ -553,9 +555,9 @@ Inilah salah satu alasan mengapa peak variance dari South beam pada sekitar 14.4
 
 ## 5. Vertical wind: indikasi adanya organized vertical motion
 
-Vertical wind berbeda dari \(u\) dan \(v\): mean profile-nya dekat nol, tetapi time–height field menunjukkan banyak **alternating positive and negative patches**.
+Vertical wind berbeda dari \$(u\)$ dan \$(v\)$: mean profile-nya dekat nol, tetapi time–height field menunjukkan banyak **alternating positive and negative patches**.
 
-Di sekitar 12–16 km pada pagi hari terdapat beberapa localized vertical motions. Jadi event yang sedang kita lihat tidak terjadi dalam lingkungan dengan \(w=0\) secara sempurna.
+Di sekitar 12–16 km pada pagi hari terdapat beberapa localized vertical motions. Jadi event yang sedang kita lihat tidak terjadi dalam lingkungan dengan \$(w=0\)$ secara sempurna.
 
 Polanya lebih menarik daripada hanya adanya updraft besar, karena terlihat perubahan tanda:
 
@@ -565,27 +567,24 @@ $$
 
 secara waktu/ketinggian.
 
-Pola demikian dapat konsisten dengan **gravity-wave-associated vertical motion**, meskipun dari gambar ini saja kita belum boleh mengatakan bahwa gravity-wave breaking sudah terbukti.
+Pola demikian apakah konsisten dengan **gravity-wave-associated vertical motion**?, gravity-wave breaking sudah terbukti.
 
-Interpretasi yang lebih aman adalah:
 
 > enhanced turbulence occurs within a region of strong horizontal shear accompanied by vertically oscillating motions, suggesting that shear instability and/or gravity-wave activity may contribute to the event.
 
-Ini lebih kuat secara ilmiah daripada langsung menyebut Kelvin–Helmholtz instability.
 
 ## 6. Echo intensity memberikan QC yang sangat penting
 
 Echo-intensity plot menunjukkan hal menarik. Pada sekitar 14–16 km sinyal masih terdeteksi jelas, walaupun jauh lebih lemah daripada echo di troposfer bawah.
 
-Secara kasar, event upper-level mempunyai echo intensity sekitar belasan sampai dua-puluhan dB, sedangkan pada beberapa lapisan bawah dapat mencapai \(30-40\) dB atau lebih.
+Secara kasar, event upper-level mempunyai echo intensity sekitar belasan sampai dua-puluhan dB, sedangkan pada beberapa lapisan bawah dapat mencapai \$(30-40\)$ dB atau lebih.
 
 Artinya peak spectral width pada 15 km **tidak muncul di daerah tanpa echo**. Jadi parameter Gaussian spectral width masih mempunyai atmospheric signal yang mendasarinya.
 
-Tetapi ada caveat penting.
 
 Pada beberapa lapisan upper troposphere, vertical-beam echo tampak lebih kuat daripada oblique-beam echoes. Ini dapat menunjukkan **aspect sensitivity** dari VHF radar.
 
-Dalam kasus itu vertical echo bisa berasal sebagian dari horizontally stratified refractive-index structures, bukan hanya isotropic turbulent Bragg scattering. Materi kuliah Anda menekankan bahwa vertical enhancement relatif terhadap oblique beams merupakan indikator aspect sensitivity; jika aspect ratio besar, penggunaan spectral width sebagai turbulence estimate menjadi kurang aman. 
+Dalam kasus itu vertical echo bisa berasal sebagian dari horizontally stratified refractive-index structures, bukan hanya isotropic turbulent Bragg scattering. Prof. Hubert menjelaskan bahwa vertical enhancement relatif terhadap oblique beams merupakan indikator aspect sensitivity; jika aspect ratio besar, penggunaan spectral width sebagai turbulence estimate menjadi kurang aman. 
 
 Karena itu sebaiknya selanjutnya dihitung
 
@@ -605,7 +604,7 @@ $$
 
 lebih mendukung isotropic-scattering interpretation, sedangkan nilai yang jauh lebih besar harus diberi caution. 
 
-Ini merupakan tambahan QC yang sangat berguna untuk assignment Anda.
+Perlukah!!!!
 
 ## 7. Sintesis event sekitar 08:15 JST
 
@@ -623,7 +622,7 @@ Kalau semua parameter digabungkan, gambarnya menjadi seperti berikut.
 | Vertical wind                           | alternating positive/negative perturbations                | compatible with organized vertical/wave motion             |
 | Cross-beam response                     | event appears in more than one beam                        | argues against an isolated numerical outlier               |
 
-Yang paling penting adalah **spatial relationship**:
+ada **spatial relationship**:
 
 $$
 \boxed{
@@ -635,7 +634,7 @@ $$
 
 dan bukan tepat di pusat wind maximum.
 
-Ini justru dinamika yang masuk akal. Turbulence yang disebabkan shear sering muncul pada flank dari jet, di mana
+Turbulence yang disebabkan shear sering muncul pada flank dari jet, di mana
 
 $$
 \left|\frac{\partial \vec V_h}{\partial z}\right|
@@ -643,9 +642,9 @@ $$
 
 lebih besar daripada di jet core sendiri.
 
-## 8. Mekanisme yang paling masuk akal
+## 8. Perkiraan Mekanisme 
 
-Berdasarkan data yang ada, urutan interpretasi fisik yang paling kuat adalah
+Berdasarkan data yang ada, urutan interpretasi fisik adalah
 
 $$
 \text{strong horizontal wind}
@@ -669,11 +668,11 @@ $$
 
 dan bersamaan dengan itu terdapat vertical-wind fluctuations yang memungkinkan adanya kontribusi gravity waves.
 
-Jadi saya akan menginterpretasikan event sebagai:
+Jadi 
 
 > **an upper-tropospheric/lower-stratospheric enhanced-turbulence event associated with strong vertical wind shear, possibly modulated by gravity-wave activity.**
 
-Saya belum akan menyebutnya definitif sebagai Kelvin–Helmholtz instability, karena untuk itu idealnya kita perlu menghitung
+untuk Kelvin–Helmholtz instability, perlu menghitung
 
 $$
 Ri=
@@ -686,13 +685,13 @@ $$
 Ri<0.25,
 $$
 
-barulah argumen dynamic instability/Kelvin–Helmholtz menjadi jauh lebih kuat.
+argumen dynamic instability/Kelvin–Helmholtz menjadi jauh lebih kuat.
 
-## 9. Ada kemungkinan gravity-wave–shear interaction
+## 9. Apakah gravity-wave–shear interaction?
 
 Vertical wind plot sebenarnya membuka interpretasi tambahan yang menarik.
 
-Jika \(w\) menunjukkan alternating upward/downward perturbations sementara \(u\) dan \(v\) juga mengalami perubahan vertikal, kondisi tersebut dapat mengindikasikan gravity wave yang memodulasi background wind shear.
+Jika \$(w\)$ menunjukkan alternating upward/downward perturbations sementara \$(u\)$ dan \$(v\)$ juga mengalami perubahan vertikal, kondisi tersebut dapat mengindikasikan gravity wave yang memodulasi background wind shear.
 
 Secara konseptual:
 
@@ -716,13 +715,13 @@ $$
 
 Jika shear menjadi cukup besar, wave dapat ikut memicu localized turbulent breakdown.
 
-Ini cocok dengan sifat event yang **terlokalisasi dalam waktu dan altitude**, bukan turbulence kuat yang merata selama 24 jam.
+Ini sifat event yang **terlokalisasi dalam waktu dan altitude**, bukan turbulence kuat yang merata selama 24 jam.
 
 ## 10. Satu hal yang perlu dibedakan dari event bawah
 
 Spectral width dan echo intensity juga sangat besar di sekitar beberapa kilometer bawah.
 
-Saya tidak menyarankan menggunakan peak di **2–5 km** sebagai event utama assignment ini tanpa QC tambahan. Di troposfer bawah, high echo power, cloud/precipitation effects, convective motions, hydrometeors, dan strong vertical motions lebih mungkin mengkontaminasi interpretation of Doppler width.
+Peak di **2–5 km** sebagai event utama assignment ini tanpa analisis tambahan. Di troposfer bawah, high echo power, cloud/precipitation effects, convective motions, hydrometeors, dan strong vertical motions lebih mungkin mengkontaminasi interpretation of Doppler width.
 
 Event sekitar **14–16 km** lebih menarik untuk pembahasan atmospheric clear-air turbulence karena:
 
@@ -732,13 +731,13 @@ Event sekitar **14–16 km** lebih menarik untuk pembahasan atmospheric clear-ai
 * vertical wind memperlihatkan wave-like variability,
 * dan corrected turbulent variance menunjukkan enhancement yang jelas.
 
-## Versi discussion yang bisa langsung dipakai dalam laporan
+## Keimpulan
 
-> **A notable turbulence event was identified near 14–16 km during approximately 07–09 JST on 13 January 2020. The vertical beam showed a maximum corrected turbulent Doppler variance of approximately \(7.73~\mathrm{m^2\,s^{-2}}\) at 15.45 km around 08:15 JST (23:15 UTC on 12 January). The raw Doppler spectral-width field also showed enhanced values in the same altitude region, and a comparable enhancement was observed by the southward beam, indicating that the feature was not an isolated spectral outlier. Echo intensity remained detectable at these altitudes, supporting the reliability of the spectral-width retrieval, although the stronger vertical-beam echo relative to some oblique beams suggests that aspect sensitivity should be examined.**
+> **A notable turbulence event was identified near 14–16 km during approximately 07–09 JST on 13 January 2020. The vertical beam showed a maximum corrected turbulent Doppler variance of approximately \$(7.73~\mathrm{m^2\,s^{-2}}\)$ at 15.45 km around 08:15 JST (23:15 UTC on 12 January). The raw Doppler spectral-width field also showed enhanced values in the same altitude region, and a comparable enhancement was observed by the southward beam, indicating that the feature was not an isolated spectral outlier. Echo intensity remained detectable at these altitudes, supporting the reliability of the spectral-width retrieval, although the stronger vertical-beam echo relative to some oblique beams suggests that aspect sensitivity should be examined.**
 >
-> **The wind measurements provide a plausible dynamical explanation for the event. A strong eastward zonal flow occupied the upper troposphere, with the turbulence enhancement occurring near the upper flank of the high-speed wind layer where the zonal wind decreased substantially with height. The meridional wind also exhibited appreciable vertical variation, implying that both \(du/dz\) and \(dv/dz\) contributed to the total horizontal wind shear. This configuration is favorable for shear-generated turbulence. In addition, the vertical-wind field exhibited alternating upward and downward perturbations near the event altitude, which may indicate gravity-wave activity. Therefore, the event can reasonably be interpreted as an enhanced-turbulence layer associated primarily with strong vertical wind shear, possibly modulated by gravity waves. Verification of Kelvin–Helmholtz instability would require additional information on static stability and calculation of the gradient Richardson number.**
+> **The wind measurements provide a plausible dynamical explanation for the event. A strong eastward zonal flow occupied the upper troposphere, with the turbulence enhancement occurring near the upper flank of the high-speed wind layer where the zonal wind decreased substantially with height. The meridional wind also exhibited appreciable vertical variation, implying that both \$(du/dz\)$ and \$(dv/dz\)$ contributed to the total horizontal wind shear. This configuration is favorable for shear-generated turbulence. In addition, the vertical-wind field exhibited alternating upward and downward perturbations near the event altitude, which may indicate gravity-wave activity. Therefore, the event can reasonably be interpreted as an enhanced-turbulence layer associated primarily with strong vertical wind shear, possibly modulated by gravity waves. Verification of Kelvin–Helmholtz instability would require additional information on static stability and calculation of the gradient Richardson number.**
 
-Satu analisis tambahan yang menurut saya **sangat bernilai sebelum laporan difinalkan** adalah membuat tiga panel baru untuk event 06–10 JST: **$\(S=\sqrt{(du/dz)^2+(dv/dz)^2}\)$, vertical/oblique echo aspect ratio, dan \$(\sigma_{\rm turb,radar}^2\)$**. Kalau ketiganya peak pada altitude dan waktu yang sama, argumen event turbulence Anda akan jauh lebih kuat.
+Tambahan tiga panel baru untuk event 06–10 JST: **$\(S=\sqrt{(du/dz)^2+(dv/dz)^2}\)$, vertical/oblique echo aspect ratio, dan \$(\sigma_{\rm turb,radar}^2\)$**. Kalau ketiganya peak pada altitude dan waktu yang sama, argumen event turbulence akan jauh lebih kuat.
 
 
 
