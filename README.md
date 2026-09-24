@@ -20,7 +20,6 @@ Data MU Radar terdiri dari lima beam: vertical, north, east, south, west; empat 
 
 
 
-## 1. Menghitung $\(2\sigma_{BB+SB}\)$
 
 <img width="388" height="303" alt="Screenshot_2026-09-24_07-35-50" src="https://github.com/user-attachments/assets/61269372-337f-4c64-a244-db12e3a0706a" />
 
@@ -33,8 +32,7 @@ https://www.eorc.jaxa.jp/ptree/
 <img width="1361" height="735" alt="windMu" src="https://github.com/user-attachments/assets/d4850d8a-381d-4466-a794-f18fceb9678e" />
 
 
-<img width="1361" height="735" alt="windMu" src="https://github.com/user-attachments/assets/c84d6ab8-7aa4-4250-bf0e-b9464c010303" />
-
+## 1. Menghitung $\(2\sigma_{BB+SB}\)$
 
 Prinsip dasarnya adalah memisahkan variance spektrum Doppler menjadi turbulence dan broadening non-turbulent:
 
