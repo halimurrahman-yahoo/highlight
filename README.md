@@ -371,7 +371,7 @@ pada 14.40 km, 23:25 UTC.
 
 Ini jauh lebih meyakinkan sebagai **notable turbulence event** daripada, misalnya, peak East beam pada 2.55 km, karena event sekitar 14–15 km merupakan bagian dari struktur yang lebih luas dan terlihat pada beberapa beam.
 
-Saya akan menulis interpretasinya kira-kira seperti ini:
+Interpretasinya kira-kira seperti ini:
 
 > A notable enhancement of turbulence-induced Doppler variance was observed in the upper troposphere/lower-stratosphere region during the morning of 13 January 2020 JST. The vertical beam showed a maximum corrected variance of approximately \(7.73~{\rm m^2\,s^{-2}}\) at 15.45 km at 23:15 UTC on 12 January (08:15 JST on 13 January). A comparable enhancement was detected by the southward beam about 10 min later at 14.40 km, suggesting that the feature was not merely an isolated spectral-width outlier but was associated with a vertically and horizontally structured region of enhanced velocity fluctuations.
 
