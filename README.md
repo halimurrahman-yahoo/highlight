@@ -2,7 +2,7 @@
 
 
 # Exercise:
-1. Download the netcdf data from https://www.rish.kyoto-u.ac.jp/radar-group/mu/data/ for 13 January, 2020 (24 hours of MU radar data at a time resolution of 10 min from 2 to 20 km). The spectral width is defined as 2σ1/2 (ms −1). Calculate 2σBB+SBfrom expressions of slide 39.
+1. Download the netcdf data from https://www.rish.kyoto-u.ac.jp/radar-group/mu/data/ for 13 January, 2020 (24 hours of MU radar data at a time resolution of 10 min from 2 to 20 km). The spectral width is defined as 2σ1/2 (ms −1). Calculate 2σBB+SB from expressions of slide 39.
 2. Calculate σ2turb,radar from the vertical beam.
 3. Identify a notable event and discuss it.
 
