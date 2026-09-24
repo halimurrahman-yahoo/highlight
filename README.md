@@ -17,6 +17,9 @@ Data MU Radar terdiri dari lima beam: vertical, north, east, south, west; empat 
 
 ## 1. Menghitung $\(2\sigma_{BB+SB}\)$
 
+<img width="430" height="360" alt="image" src="https://github.com/user-attachments/assets/a3b8d676-3887-4645-85d4-a3a9332cbf61" />
+
+
 Prinsip dasarnya adalah memisahkan variance spektrum Doppler menjadi turbulence dan broadening non-turbulent:
 
 $$
@@ -88,7 +91,7 @@ $$
 }
 $$
 
-bukan sekadar menjumlahkan \(2\sigma_{BB}+2\sigma_{SB}\), karena yang bersifat aditif pada formulasi ini adalah **variance**.
+bukan sekadar menjumlahkan \$(2\sigma_{BB}+2\sigma_{SB}\)$, karena yang bersifat aditif pada formulasi ini adalah **variance**.
 
 ### Khusus vertical beam
 
@@ -108,8 +111,7 @@ semua shear terms hilang. Maka
 
 $$
 \boxed{
-\sigma_{BB}^{2}
-=
+\sigma_{BB}^{2}=
 \frac{\theta^2}{4\ln2}U_h^2
 }
 $$
