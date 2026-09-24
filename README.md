@@ -17,7 +17,7 @@ Data MU Radar terdiri dari lima beam: vertical, north, east, south, west; empat 
 
 ## 1. Menghitung $\(2\sigma_{BB+SB}\)$
 
-<img width="430" height="360" alt="image" src="https://github.com/user-attachments/assets/a3b8d676-3887-4645-85d4-a3a9332cbf61" />
+<img width="388" height="303" alt="Screenshot_2026-09-24_07-35-50" src="https://github.com/user-attachments/assets/61269372-337f-4c64-a244-db12e3a0706a" />
 
 
 Prinsip dasarnya adalah memisahkan variance spektrum Doppler menjadi turbulence dan broadening non-turbulent:
