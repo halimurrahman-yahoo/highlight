@@ -257,7 +257,10 @@ tetapi untuk analisis statistik jangan langsung membuang semua nilai negatif tan
 
 di halaman web RISH menyebut `wdt1...wdt5` sebagai **half-power full width**, sedangkan di soal secara eksplisit mendefinisikannya sebagai \$(2\sqrt{\sigma^2}\)$. ([RISH][1]) Untuk assignment ini mengikuti definisi yang diberikan soal, yaitu memakai \$(W/2\)$. Tidak mengubah  menjadi Gaussian FWHM dengan \$(2\sqrt{2\ln2}\)$. slide 39 konversi?
 
-### Hasil dari gambar
+### Hasil
+
+<img width="1206" height="1280" alt="image" src="https://github.com/user-attachments/assets/ea954b79-cd06-4e21-93d9-25425e7b917e" />
+
 
 Pada vertical beam, gambar menunjukkan:
 
@@ -413,7 +416,14 @@ $$
 Cek  **script yang menghasilkan gambar **, bgmn menghitung \$(BB+SB\)$ untuk North/East/South/West. Cross-term Eq. 28 sensitif terhadap **arah dan tanda \$(du/dz\)$ atau \$(dv/dz\)$**. !!!! 
 
 
-Tambahahan analisis tiga parameter —**spectral width, echo intensity, serta zonal–meridional–vertical wind**— sbg interpretasi event unutuk memperkuat \$(\sigma^2_{\mathrm{turb,radar}}\)$.
+## Parameter —**spectral width, echo intensity, serta zonal–meridional–vertical wind**— sbg interpretasi event unutuk memperkuat \$(\sigma^2_{\mathrm{turb,radar}}\)$.
+
+<img width="617" height="929" alt="20200113 wdt" src="https://github.com/user-attachments/assets/1beb6f00-cadc-496d-b206-d51ace223688" />
+
+<img width="618" height="929" alt="20200113 pwr" src="https://github.com/user-attachments/assets/edc84574-583a-4253-bbdd-053092c19157" />
+
+<img width="621" height="873" alt="20200113 wnd" src="https://github.com/user-attachments/assets/1c4c851e-c8e1-49d5-858c-88384e819ae3" />
+
 
 ## 1. Gambaran umum 13 Januari 2020
 
@@ -573,7 +583,7 @@ Pola demikian apakah konsisten dengan **gravity-wave-associated vertical motion*
 > enhanced turbulence occurs within a region of strong horizontal shear accompanied by vertically oscillating motions, suggesting that shear instability and/or gravity-wave activity may contribute to the event.
 
 
-## 6. Echo intensity memberikan QC yang sangat penting
+## 6. Echo intensity memberikan info penting
 
 Echo-intensity plot menunjukkan hal menarik. Pada sekitar 14–16 km sinyal masih terdeteksi jelas, walaupun jauh lebih lemah daripada echo di troposfer bawah.
 
