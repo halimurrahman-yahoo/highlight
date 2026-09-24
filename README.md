@@ -250,11 +250,11 @@ sigma2_turb_plot = np.where(
 
 tetapi untuk analisis statistik jangan langsung membuang semua nilai negatif tanpa mempertimbangkan error measurement; materi kuliah juga mengingatkan bahwa nilai negatif dapat muncul karena uncertainty correction. 
 
-Ada satu detail yang harus Anda tulis di laporan: halaman RISH menyebut `wdt1...wdt5` sebagai **half-power full width**, sedangkan soal Anda secara eksplisit mendefinisikannya sebagai \(2\sqrt{\sigma^2}\). ([RISH][1]) Untuk assignment ini saya akan mengikuti definisi yang diberikan soal, yaitu memakai \(W/2\). Jangan mengubah lagi menjadi Gaussian FWHM dengan \(2\sqrt{2\ln2}\) kecuali dosen/slide 39 memang meminta konversi itu.
+Ada satu detail yang harus Anda tulis di laporan: halaman RISH menyebut `wdt1...wdt5` sebagai **half-power full width**, sedangkan soal Anda secara eksplisit mendefinisikannya sebagai \$(2\sqrt{\sigma^2}\)$. ([RISH][1]) Untuk assignment ini mengikuti definisi yang diberikan soal, yaitu memakai \$(W/2\)$. Tidak mengubah  menjadi Gaussian FWHM dengan \$(2\sqrt{2\ln2}\)$. slide 39 meminta konversi itu?
 
-### Hasil dari gambar Anda
+### Hasil dari gambar
 
-Pada vertical beam, gambar Anda menunjukkan:
+Pada vertical beam, gambar menunjukkan:
 
 $$
 \boxed{
@@ -290,8 +290,7 @@ tanggal 13 Januari.
 RMS turbulent radial velocity yang berkaitan dengan variance tersebut adalah
 
 $$
-\sigma_{\rm turb}
-=
+\sigma_{\rm turb}=
 \sqrt{7.730}
 \approx2.78~{\rm m\,s^{-1}}.
 $$
