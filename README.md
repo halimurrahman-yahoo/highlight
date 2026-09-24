@@ -83,8 +83,7 @@ Yang diminta sebagai spectral-width correction adalah
 
 $$
 \boxed{
-2\sigma_{BB+SB}
-=
+2\sigma_{BB+SB}=
 2\sqrt{\sigma_{BB+SB}^{2}}
 }
 $$
