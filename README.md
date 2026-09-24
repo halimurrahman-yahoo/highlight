@@ -337,7 +337,7 @@ Peak yang terlihat pada gambar adalah:
 
 # 3. Notable event: sekitar 23 UTC pada 12 Januari / 08 JST 13 Januari
 
-Menurut saya event paling kuat untuk dibahas **bukan sekadar pixel dengan nilai terbesar dari kelima beam**, tetapi struktur yang mempunyai coherence dalam waktu–ketinggian dan muncul pada lebih dari satu beam.
+Event terkait dengan nilai terbesar dari kelima beam, juga struktur yang mempunyai coherence dalam waktu–ketinggian dan muncul pada lebih dari satu beam.
 
 Pada gambar terlihat enhanced turbulent variance yang cukup jelas pada sekitar
 
