@@ -126,8 +126,7 @@ Jadi:
 
 $$
 \boxed{
-2\sigma_{BB}
-=
+2\sigma_{BB}=
 2\sqrt{
 \frac{\theta^2}{4\ln2}
 (u^2+v^2)
