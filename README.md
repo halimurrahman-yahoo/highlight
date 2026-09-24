@@ -262,7 +262,7 @@ sigma2_turb_plot = np.where(
 )
 ```
 
-tetapi untuk analisis statistik jangan langsung membuang semua nilai negatif tanpa mempertimbangkan error measurement; materi kuliah juga mengingatkan bahwa nilai negatif dapat muncul karena uncertainty correction. 
+tetapi untuk analisis statistik tidak langsung membuang semua nilai negatif tanpa mempertimbangkan error measurementyang bisa muncul karena uncertainty correction. 
 
 di halaman web RISH menyebut `wdt1...wdt5` sebagai **half-power full width**, sedangkan di soal secara eksplisit mendefinisikannya sebagai \$(2\sqrt{\sigma^2}\)$. ([RISH][1]) Untuk assignment ini mengikuti definisi yang diberikan soal, yaitu memakai \$(W/2\)$. Tidak mengubah  menjadi Gaussian FWHM dengan \$(2\sqrt{2\ln2}\)$. slide 39 konversi?
 
@@ -369,7 +369,7 @@ $$
 
 pada 14.40 km, 23:25 UTC.
 
-Ini jauh lebih meyakinkan sebagai **notable turbulence event** daripada, misalnya, peak East beam pada 2.55 km, karena event sekitar 14–15 km merupakan bagian dari struktur yang lebih luas dan terlihat pada beberapa beam.
+Sbagai **notable turbulence event**  peak East beam pada 2.55 km, karena event sekitar 14–15 km merupakan bagian dari struktur yang lebih luas dan terlihat pada beberapa beam.
 
 Interpretasinya kira-kira seperti ini:
 
@@ -389,7 +389,7 @@ Ada juga ciri menarik bahwa enhanced layer tampak **berubah ketinggian dengan wa
 
 White area yang besar sekitar 03–04 UTC juga jangan ditafsirkan sebagai “zero turbulence”. Karena dataset menggunakan missing value `999`, bagian putih lebih tepat disebut **missing/invalid radar retrievals**. ([RISH][1])
 
-### Kesimpulan yang bisa dipakai untuk menjawab ketiga soal
+### Kesimpulan umum
 
 Secara ringkas, gambar mendukung bahwa observed spectral width pertama-tama diubah menjadi variance melalui
 
