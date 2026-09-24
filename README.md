@@ -1,22 +1,26 @@
-# Catatan highlight
+# Q/A Lesson 3/4
 
-Exercise:
+---
+
+# Exercise:
 1. Download the netcdf data from https://www.rish.kyoto-u.ac.jp/radar-group/mu/data/ for 13 January, 2020 (24 hours of MU radar data at a time resolution of 10 min from 2 to 20 km). The spectral width is defined as 2σ1/2 (ms −1). Calculate 2σBB+SBfrom expressions of slide 39.
 2. Calculate σ2turb,radar from the vertical beam.
 3. Identify a notable event and discuss it.
 
+---
 
+# Answer
 
 <img width="684" height="702" alt="Screenshot_2026-09-24_05-49-58" src="https://github.com/user-attachments/assets/6bec5e18-b2dc-4d3f-a4a1-67e173146894" />
 
-https://www.eorc.jaxa.jp/ptree/
 
-Himawari + MTG TIR, 
-MTG = TIR EUMETSAT
 
 <img width="430" height="360" alt="himawari12Jan2026-23UTC" src="https://github.com/user-attachments/assets/503f7ecb-9bc0-435c-8043-5399daf7cb52" />
 
-<img width="1600" height="1200" alt="chart" src="https://github.com/user-attachments/assets/9c92aad3-61cf-4abd-9076-c719a7338f5b" />
+<img width="430" height="360" alt="chart" src="https://github.com/user-attachments/assets/9c92aad3-61cf-4abd-9076-c719a7338f5b" />
+
+https://www.eorc.jaxa.jp/ptree/
+
 
 
 Data MU Radar terdiri dari lima beam: vertical, north, east, south, west; empat beam miring berada pada zenith angle 10°. Produk standar mempunyai resolusi waktu 10 menit, resolusi vertikal 150 m, dan mencakup kira-kira 2.025–19.875 km. Nilai `999` adalah missing data. ([RISH][1]) Pada gambar Anda indexing-nya dimulai dari nol, sehingga `Beam 0 = official Beam 1 = vertical`.
