@@ -427,11 +427,8 @@ Cek  **script yang menghasilkan gambar **, bgmn menghitung \$(BB+SB\)$ untuk Nor
 
 ## Parameter —**spectral width, echo intensity, serta zonal–meridional–vertical wind**— sbg interpretasi event unutuk memperkuat \$(\sigma^2_{\mathrm{turb,radar}}\)$.
 
-<img width="617" height="929" alt="20200113 wdt" src="https://github.com/user-attachments/assets/1beb6f00-cadc-496d-b206-d51ace223688" />
 
-<img width="618" height="929" alt="20200113 pwr" src="https://github.com/user-attachments/assets/edc84574-583a-4253-bbdd-053092c19157" />
-
-<img width="621" height="873" alt="20200113 wnd" src="https://github.com/user-attachments/assets/1c4c851e-c8e1-49d5-858c-88384e819ae3" />
+<img width="1361" height="735" alt="windMu" src="https://github.com/user-attachments/assets/d4850d8a-381d-4466-a794-f18fceb9678e" />
 
 
 ## 1. Gambaran umum 13 Januari 2020
