@@ -11,15 +11,7 @@
 
 <img width="430" height="360" alt="Screenshot_2026-09-24_05-49-58" src="https://github.com/user-attachments/assets/6bec5e18-b2dc-4d3f-a4a1-67e173146894" />
 
-
-
-<img width="430" height="360" alt="himawari12Jan2026-23UTC" src="https://github.com/user-attachments/assets/503f7ecb-9bc0-435c-8043-5399daf7cb52" />
-
-<img width="430" height="360" alt="chart" src="https://github.com/user-attachments/assets/9c92aad3-61cf-4abd-9076-c719a7338f5b" />
-
-https://www.eorc.jaxa.jp/ptree/
-
-
+Location MU Radar, Shigaraki-Japan
 
 Data MU Radar terdiri dari lima beam: vertical, north, east, south, west; empat beam miring berada pada zenith angle 10°. Produk standar mempunyai resolusi waktu 10 menit, resolusi vertikal 150 m, dan mencakup kira-kira 2.025–19.875 km. Nilai `999` adalah missing data. ([RISH][1]) Pada gambar Anda indexing-nya dimulai dari nol, sehingga `Beam 0 = official Beam 1 = vertical`.
 
@@ -754,6 +746,14 @@ Event sekitar **14–16 km** lebih menarik untuk pembahasan atmospheric clear-ai
 > **The wind measurements provide a plausible dynamical explanation for the event. A strong eastward zonal flow occupied the upper troposphere, with the turbulence enhancement occurring near the upper flank of the high-speed wind layer where the zonal wind decreased substantially with height. The meridional wind also exhibited appreciable vertical variation, implying that both \(du/dz\) and \(dv/dz\) contributed to the total horizontal wind shear. This configuration is favorable for shear-generated turbulence. In addition, the vertical-wind field exhibited alternating upward and downward perturbations near the event altitude, which may indicate gravity-wave activity. Therefore, the event can reasonably be interpreted as an enhanced-turbulence layer associated primarily with strong vertical wind shear, possibly modulated by gravity waves. Verification of Kelvin–Helmholtz instability would require additional information on static stability and calculation of the gradient Richardson number.**
 
 Satu analisis tambahan yang menurut saya **sangat bernilai sebelum laporan difinalkan** adalah membuat tiga panel baru untuk event 06–10 JST: **$\(S=\sqrt{(du/dz)^2+(dv/dz)^2}\)$, vertical/oblique echo aspect ratio, dan \$(\sigma_{\rm turb,radar}^2\)$**. Kalau ketiganya peak pada altitude dan waktu yang sama, argumen event turbulence Anda akan jauh lebih kuat.
+
+
+
+<img width="430" height="360" alt="himawari12Jan2026-23UTC" src="https://github.com/user-attachments/assets/503f7ecb-9bc0-435c-8043-5399daf7cb52" />
+
+<img width="430" height="360" alt="chart" src="https://github.com/user-attachments/assets/9c92aad3-61cf-4abd-9076-c719a7338f5b" />
+
+https://www.eorc.jaxa.jp/ptree/
 
 
 [1]: https://www.rish.kyoto-u.ac.jp/radar-group/mu/data/?utm_source=chatgpt.com "MU Radar Data"
