@@ -170,7 +170,7 @@ Untuk beam miring, ada satu hal penting: \(\partial U/\partial z\) pada persamaa
 
 ---
 
-## 2. Menghitung \(\sigma_{\rm turb,radar}^2\) dari vertical beam
+## 2. Menghitung \$(\sigma_{\rm turb,radar}^2\)$ dari vertical beam
 
 Pertanyaan menyatakan spectral width didefinisikan sebagai
 
@@ -182,8 +182,7 @@ sehingga
 
 $$
 \boxed{
-\sigma_{\rm obs}^{2}
-=
+\sigma_{\rm obs}^{2}=
 \left(\frac{W}{2}\right)^2
 }
 $$
@@ -192,10 +191,8 @@ dan untuk vertical beam:
 
 $$
 \boxed{
-\sigma_{\rm turb,radar}^{2}
-=
-\left(\frac{W_{\rm vertical}}{2}\right)^2
--
+\sigma_{\rm turb,radar}^{2}=
+\left(\frac{W_{\rm vertical}}{2}\right)^2-
 \frac{\theta^2}{4\ln2}(u^2+v^2)
 }
 $$
@@ -204,8 +201,7 @@ atau secara singkat:
 
 $$
 \boxed{
-\sigma_{\rm turb,radar}^{2}
-=
+\sigma_{\rm turb,radar}^{2}=
 \sigma_{\rm obs}^{2}-\sigma_{BB}^{2}
 }
 $$
