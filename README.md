@@ -134,7 +134,7 @@ $$
 }
 $$
 
-MU Radar memiliki beam full width sekitar \(3.6^\circ\), sehingga one-way half-power **half-width** yang dipakai di persamaan adalah
+MU Radar memiliki beam full width sekitar \$(3.6^\circ\)$, sehingga one-way half-power **half-width** yang dipakai di persamaan adalah
 
 $$
 \theta = 1.8^\circ
