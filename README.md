@@ -29,7 +29,7 @@ $$
 \sigma_{BB+SB}^{2}.
 $$
 
-Beam broadening (BB) berasal dari finite radar beam dalam horizontal wind, sedangkan shear broadening (SB) berasal dari variasi wind di dalam radar sampling volume. Yang penting, untuk **vertical beam, shear broadening menjadi nol**, sehingga vertical beam memerlukan koreksi paling sedikit. Ini juga dijelaskan secara eksplisit dalam materi kuliah Anda.  Pendekatan yang sama digunakan dalam studi MU Radar untuk memperoleh turbulent Doppler variance dari vertical beam. ([Springer][2])
+Beam broadening (BB) berasal dari finite radar beam dalam horizontal wind, sedangkan shear broadening (SB) berasal dari variasi wind di dalam radar sampling volume. Yang penting, untuk **vertical beam, shear broadening menjadi nol**, sehingga vertical beam memerlukan koreksi paling sedikit. Penjelasam Prof. Huber.  Pendekatan ini yang sama digunakan dalam studi MU Radar untuk memperoleh turbulent Doppler variance dari vertical beam. ([Springer][2])
 
 Untuk bentuk Dehghan–Hocking yang umum, correction variance dapat ditulis sebagai
 
