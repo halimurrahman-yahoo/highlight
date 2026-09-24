@@ -29,7 +29,8 @@ Data MU Radar terdiri dari lima beam: vertical, north, east, south, west; empat 
 <img width="430" height="360" alt="chart" src="https://github.com/user-attachments/assets/9c92aad3-61cf-4abd-9076-c719a7338f5b" />
 
 https://www.eorc.jaxa.jp/ptree/
-<img width="1361" height="735" alt="windMu" src="https://github.com/user-attachments/assets/d4850d8a-381d-4466-a794-f18fceb9678e" />
+
+<img width="1366" height="768" alt="newWind" src="https://github.com/user-attachments/assets/4de3574b-b2d1-4b21-a25b-2bb5b2ec5e04" />
 
 
 ## 1. Menghitung $\(2\sigma_{BB+SB}\)$
@@ -427,8 +428,7 @@ Cek  **script yang menghasilkan gambar **, bgmn menghitung \$(BB+SB\)$ untuk Nor
 
 ## Parameter —**spectral width, echo intensity, serta zonal–meridional–vertical wind**— sbg interpretasi event unutuk memperkuat \$(\sigma^2_{\mathrm{turb,radar}}\)$.
 
-
-<img width="1361" height="735" alt="windMu" src="https://github.com/user-attachments/assets/d4850d8a-381d-4466-a794-f18fceb9678e" />
+<img width="1366" height="768" alt="newWind" src="https://github.com/user-attachments/assets/25fe7a2e-d2f2-4792-a8d7-ad0f4bfaf956" />
 
 
 ## 1. Gambaran umum 13 Januari 2020
