@@ -15,13 +15,12 @@ Middle Upper (MU) Radar,located at the Shigaraki MU Observatory (34.85°N, 136.1
 
 Data MU Radar terdiri dari lima beam: vertical, north, east, south, west; empat beam miring berada pada zenith angle 10°. Produk standar mempunyai resolusi waktu 10 menit, resolusi vertikal 150 m, dan mencakup kira-kira 2.025–19.875 km. Nilai `999` adalah missing data. ([RISH][1]) Pada gambar Anda indexing-nya dimulai dari nol, sehingga `Beam 0 = official Beam 1 = vertical`.
 
-## 1. Menghitung \(2\sigma_{BB+SB}\)
+## 1. Menghitung $\(2\sigma_{BB+SB}\)$
 
 Prinsip dasarnya adalah memisahkan variance spektrum Doppler menjadi turbulence dan broadening non-turbulent:
 
 $$
-\sigma_{\rm obs}^{2}
-=
+\sigma_{\rm obs}^{2}=
 \sigma_{\rm turb,radar}^{2}
 +
 \sigma_{BB+SB}^{2}.
