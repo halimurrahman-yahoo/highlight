@@ -325,7 +325,7 @@ Jadi angka **7.73 m² s⁻²** pada gambar bukan spectral width; itu sudah merup
 
 Peak yang terlihat pada gambar adalah:
 
-| Beam pada plot | Direction | Peak \(\sigma_{\rm turb}^2\) | UTC          |       Height |
+| Beam pada plot | Direction | Peak \$(\sigma_{\rm turb}^2\)$ | UTC          |       Height |
 | -------------- | --------- | ---------------------------: | ------------ | -----------: |
 | 0              | Vertical  |             **7.730 m² s⁻²** | 12 Jan 23:15 | **15.45 km** |
 | 1              | North     |                 8.550 m² s⁻² | 13 Jan 01:05 |     11.70 km |
